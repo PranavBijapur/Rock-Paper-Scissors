@@ -144,6 +144,11 @@ function gameOver() {
         resultEl.textContent = "Game Over!";
     }
     resultEl.className = "result-display lose";
+
+    // Wait 2 seconds, then return to menu
+    setTimeout(() => {
+        showScreen(menuScreen);
+    }, 5000);
 }
 
 // ===== High Score Functions =====
